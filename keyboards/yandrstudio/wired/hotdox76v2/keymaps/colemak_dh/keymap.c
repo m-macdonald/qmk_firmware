@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // right hand
       KC_NO,  KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
       KC_NO,  KC_AGIN,  KC_PSTE,  KC_COPY,  KC_CUT,   KC_UNDO,  KC_NO,
-              KC_LCAP,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_NO,
+              KC_CAPS,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_NO,
       KC_NO,  KC_INS,   KC_HOME,  KC_PGDN,  KC_PGUP,  KC_END,   KC_NO,
                         KC_DEL,   KC_NO,    KC_NO,    KC_NO,    KC_NO,
       KC_NO, KC_NO,
