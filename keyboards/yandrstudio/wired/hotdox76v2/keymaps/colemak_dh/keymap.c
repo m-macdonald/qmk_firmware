@@ -9,7 +9,7 @@ enum Layer_name {
     QWERTY
 };
 
-const uint16_t PROGMEM qwerty_toggle_combo[] = {KC_N, KC_E, KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM qwerty_toggle_combo[] = {LSFT_T(KC_N), LCTL_T(KC_E), LALT_T(KC_I), LGUI_T(KC_O), COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
   COMBO(qwerty_toggle_combo, TG(5))
 };
@@ -81,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	LAYOUT(
        // left hand
        KC_NO, KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO, KC_NO,
-       KC_NO, KC_RBT,   KC_NO,    KC_NO,    KC_NO,    KC_NO, KC_NO,
+       KC_NO, QK_RBT,   KC_NO,    KC_NO,    KC_NO,    KC_NO, KC_NO,
        KC_NO, KC_LGUI,  KC_LALT,  KC_LCTL,  KC_LSFT,  KC_NO,
        KC_NO, KC_NO,    KC_RALT,  KC_NO,    KC_NO,    KC_NO, KC_NO,
        KC_NO, KC_NO,    KC_NO,    KC_NO,    KC_NO,
@@ -245,22 +245,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 	LAYOUT(
        // left hand
-       KC_TRNS, KC_1, KC_2, KC_3, KC_4, KC_5, KC_TRNS,
-       KC_TRNS, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_TRNS,
-       KC_TRNS, KC_A, KC_S, KC_D, KC_F, KC_TRNS,
-       KC_TRNS, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+       KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_TRNS,
+       KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_TRNS,
+       KC_LCAP, KC_A, KC_S, KC_D, KC_F, KC_TRNS,
+       KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_TRNS,
+       KC_LCTL, KC_LGUI, KC_LALT, KC_TRNS, KC_TRNS,
                                            KC_TRNS, KC_TRNS,
                                                     KC_TRNS,
-                                  KC_SPC, KC_BSPC, KC_TRNS,
+                                  KC_SPC, KC_TAB, KC_TRNS,
     // right hand
        KC_TRNS,  KC_6, KC_7, KC_8, KC_9, KC_0, KC_TRNS,
-       KC_TRNS,  KC_Y, KC_U, KC_I, KC_O, KC_P, KC_TRNS,
+       KC_TRNS,  KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC,
                  KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_TRNS,
-       KC_TRNS,  KC_N, KC_M, KC_COMM, KC_DOT, KC_SLASH, KC_TRNS,
+       KC_TRNS,  KC_N, KC_M,KC_COMM, KC_DOT, KC_SLASH, KC_TRNS,
                           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS, KC_TRNS,
        KC_TRNS,
-       KC_TRNS, KC_TAB, KC_ENT
+       KC_TRNS, KC_ENT, KC_BSPC
     )
 };
